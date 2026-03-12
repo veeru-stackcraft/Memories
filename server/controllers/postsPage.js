@@ -15,7 +15,8 @@ export const getPosts = async (req, res) => {
 };
 
 // Add a post to database,
-//  before inserting in DB validate whether its been submitted as per defined schema
+//  before inserting in DB validate
+// whether its been submitted as per defined schema
 export const createPost = async (req, res) => {
   const postBody = req.body;
   const newPost = PostMessages(postBody);
